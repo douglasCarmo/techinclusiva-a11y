@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechInclusiva Notícias</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff; color: #222; }
+    .aviso { color: #595959; }               /* contraste 7:1 */
+    .btn { background: #0d47a1; color: #fff; padding: 8px 16px; border: 0; cursor: pointer; }
+    .btn:focus-visible { outline: 3px solid #ffb300; outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>TechInclusiva Notícias</h1>
+
+    <img src="logo.png" alt="Logotipo da TechInclusiva">
+
+    <p class="aviso">Cadastre-se para receber as últimas notícias.</p>
+
+    <form onsubmit="alert('Enviado!'); return false;">
+      <label for="email">Seu e-mail</label>
+      <input type="email" id="email" name="email" autocomplete="email">
+      <button type="submit" class="btn">Assinar</button>
+    </form>
+
+    <h2>Últimas notícias</h2>
+    <a href="/noticia1">Leia: Novidades em acessibilidade web</a>
+    <a href="/noticia2"><img src="n2.jpg" alt="Leia a notícia 2: tecnologia assistiva"></a>
+
+    <label for="cat">Categoria</label>
+    <select id="cat">
+      <option>Tecnologia</option>
+      <option>Ciência</option>
+    </select>
+  </main>
+</body>
+</html>
