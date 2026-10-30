@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "serve": "python -m http.server 8080",
+  "axe": "axe http://localhost:8080/index.html --tags wcag2a,wcag2aa,wcag21a,wcag21aa --save resultado_axe.json --chromedriver-path node_modules/chromedriver/lib/chromedriver/chromedriver.exe",
+  "axe:corrigido": "axe http://localhost:8080/index_corrigido.html --tags wcag2a,wcag2aa,wcag21a,wcag21aa --save resultado_axe_corrigido.json --chromedriver-path node_modules/chromedriver/lib/chromedriver/chromedriver.exe"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
